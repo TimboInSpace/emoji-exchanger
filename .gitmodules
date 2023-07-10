@@ -1,0 +1,3 @@
+[submodule "hugotest/hugotester/themes/archie"]
+	path = hugotest/hugotester/themes/archie
+	url = https://github.com/athul/archie
