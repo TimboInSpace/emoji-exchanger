@@ -1,6 +1,8 @@
 # emoji-exchanger
 Exchanges shortcode-style emoji for their native representations.
 
+**tldr; Just use exchanger.js if you don't want to bother with anything else.  This is meant to be simple.**
+
 
 
 I have a lot of documentation written github-style emoji shortcodes. For example:
@@ -24,7 +26,7 @@ hugo server -D
 
 ## Instructions
 
-Use NodeJS to run `exchanger.js`. Provide an input filename and output filename for conversion.
+Use NodeJS to run `exchanger.js`. Provide an input filename and output filename for conversion. Requires node version 13+.
 
 ```
 node exchanger.js INFILE OUTFILE
@@ -35,8 +37,18 @@ node exchanger.js INFILE OUTFILE
 For example:
 
 ```
-node exchanger.js ./hugotest/hugotester/content/input.md ./hugotest/hugotester/content/output.md
+node exchanger.js ./hugotester/content/posts/input.md ./hugotester/content/posts/output.md
 ```
+
+
+
+With the Hugo local server running, navigate to http://localhost:1313 to see the result. 
+
+<img src="emoji-exchanger%20screenshot.png" alt="emoji-exchanger screenshot" style="zoom: 80%;" />
+
+> Note: your output file will have a YAML frontmatter identical to the input, so titles / descriptions / tags will be the same.
+
+
 
 
 

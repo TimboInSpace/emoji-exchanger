@@ -18,6 +18,9 @@
 					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
 					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
 					<br>{{ template "partials/pagedescription.html" . }}
+					<p style="border: 3px solid var(--bordercl); padding: 0.5rem 1rem;">
+						{{ .Summary }}
+					</p>
 					<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
 				</section>
 				{{ end }}
