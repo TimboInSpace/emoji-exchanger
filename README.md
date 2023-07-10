@@ -11,9 +11,9 @@ I have a lot of documentation written github-style emoji shortcodes. For example
 
 Unfortunately, I just started using a static site generator that renders markdown, *but does not render emoji shortcodes* :scream: It does, however, render system emoji. 
 
+> To expedite your local testing, I've included a minimal Hugo website for testing the rendering of markdown files with emoji inside. Just stick your `.md` files in the `/content` directory and you're good to go. 
 
-
-To expedite your local testing, I've included a minimal Hugo website for testing the rendering of markdown files with emoji inside. Just stick your `.md` files in the `/content` directory and you're good to go. To run the Hugo server locally, do the following:
+To run the Hugo server locally, do the following:
 
 ```
 cd /home/whatever/emoji-exchanger/hugotester
